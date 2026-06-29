@@ -8,8 +8,7 @@ public class ArrayCaseStudy {
         int maxScore = scores[0];
         int minScore = scores[0];
         int passedCount = 0;
-        
-        // Data flow: Loop through the array to process each score sequentially from index 0 to n-1
+
         for (int score : scores) {
             totalSum += score;
             
@@ -25,8 +24,7 @@ public class ArrayCaseStudy {
         }
         
         double averageScore = (double) totalSum / scores.length;
-        
-        // Display Results
+      
         System.out.println("=== Pre-test Score Analysis Results ===");
         System.out.println("1. Total score of all students: " + totalSum + " points");
         System.out.println("2. Average score: " + averageScore + " points");
